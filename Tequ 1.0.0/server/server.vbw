@@ -1,0 +1,10 @@
+frmServer = 0, 0, 849, 451, , 25, 25, 874, 476, C
+modGeneral = 50, 50, 899, 501, Z
+modTypes = 75, 75, 225, 510, 
+modGlobals = 100, 100, 250, 535, 
+modData = 75, 75, 924, 526, 
+modEnumerations = 175, 175, 1024, 626, 
+modHandleData = 200, 200, 1049, 651, 
+modConstants = 0, 0, 849, 451, 
+clsBuffer = 25, 25, 874, 476, 
+modServerTCP = 0, 0, 846, 451, 

@@ -1,0 +1,13 @@
+frmServer = 75, 75, 231, 510, Z, 25, 25, 880, 476, C
+modServerTCP = 50, 50, 905, 501, 
+clsBuffer = 150, 150, 1005, 601, 
+modGeneral = 125, 125, 980, 576, 
+modTypes = 175, 175, 1030, 626, 
+modConstants = 200, 200, 1055, 651, 
+modGlobals = 0, 0, 855, 451, 
+modServerLoop = 50, 50, 905, 501, 
+modHandleData = 75, 75, 930, 526, 
+modEnumerations = 100, 100, 955, 551, 
+modDatabase = 75, 75, 928, 526, 
+modBinary = 75, 75, 939, 526, 
+frmPacketViewer = 175, 175, 1035, 626, , 150, 150, 1010, 601, C

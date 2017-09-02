@@ -1,0 +1,38 @@
+	- Main
+	- Login(Singleplayer or Multiplayer)
+		- Setup Game
+			- Loading Data
+				- Players
+				- Maps
+				- Items
+				- Map Objects
+					- Resource
+					- Other
+				- NPCs
+				- Banks
+				- Interactive Interfaces
+			- Loading DirectX
+				- Setting up a Font
+				- Loading Graphics
+			- [Loading and connecting to winsock]
+			- Starting GameLoop
+				- Rendering Graphics
+					- Map
+					- Player
+					- NPCs
+					- Map Objects
+					- Text
+					- Inventory
+				- Blting to Screen
+				- Movement
+					- Player
+					- NPC
+			- Showing the Game Screen
+
+
+	- Closing Game
+		- Close the Game Screen
+		- [Close Winsock]
+		- Stop the GameLoop
+		- Sop DirectX
+		- Unload Data

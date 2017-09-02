@@ -1,0 +1,14 @@
+frmMain = 100, 100, 297, 535, , 25, 25, 878, 476, C
+modGeneral = 50, 50, 903, 501, 
+modTypes = 125, 125, 322, 560, 
+frmMenu = 100, 100, 996, 551, , 150, 150, 347, 585, C
+modGlobals = 50, 50, 946, 501, 
+modGraphics = 75, 75, 968, 526, Z
+modText = 125, 125, 1018, 576, 
+modConstants = 25, 25, 918, 476, 
+clsBuffer = 25, 25, 874, 476, 
+modHandleData = 75, 75, 225, 510, 
+modClientTCP = 100, 100, 250, 535, 
+modEnumerations = 125, 125, 275, 560, 
+modData = 150, 150, 999, 601, 
+frmEditor_Map = 175, 175, 1023, 626, , 150, 150, 998, 601, C

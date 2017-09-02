@@ -1,0 +1,63 @@
+	- TODO -
+
+Choice to use multiple tilesets
+Advanced Map Editor buttons (clear map, copy map, fill layer)
+
+Player sprite rendering
+Player movement (with multiplayer updates)
+
+Map Attributes (Blocked, Warp, NPC avoid)
+Chat system with colors
+Map transitions
+
+NPC rendering
+NPC movement
+
+
+
+Items
+Item rendering
+Equipment
+Health
+Combat
+
+Work began on 09/09/13
+-------------------------------------------------
+11/09/13 Three Day Summary of Primary Development
+-------------------------------------------------
+	- Basic client and server framework setup
+	- Engine properly initializes DirectX7 for rendering 2D graphics and text.
+	- Server and client use the winsock control, and can successfully send packets of information between each other.
+	- Nifty bug notification and handling system so the users can know when a bug occurred, and information about the bug is printed into a text file full of all the information needed to report it.
+	- DLL installer prompt when starting the program for the first time.
+	- About 1,300 lines of code (4,500 words)
+	- Added a Map Editor
+		- Began work on map editing
+	- Added Basic Player
+
+-------------------------------------------------
+12/09/13 Day Three of Primary Development
+-------------------------------------------------
+	- Attempted to fix tile placing (Gah! X + Y converting is difficult)
+	- Added singleplayer account loading and saving
+
+-------------------------------------------------
+15/09/13 Day Six of Primary Development
+-------------------------------------------------
+	- Added multiplayer account logging in and creating
+
+-------------------------------------------------
+16/09/13 Day Seven of Primary Development
+-------------------------------------------------
+	- Fixed packet sending bug (Data was sent to 1 instead of index)
+	- Fixed packets not being sent after the SendEnterGame
+	- Made packets that send game data to the players
+	- Made map render correctly with all nine layers -> Animation tiles don't work yet
+	- Fixed tile placing
+	- Need to find a way to optimize map data packets
+
+-------------------------------------------------
+25/09/13 Day Sixteen of Primary Development
+-------------------------------------------------
+	- Decided to try working on this again
+	- Scratched sending map data over packets.

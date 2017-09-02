@@ -1,0 +1,58 @@
+Public MapCache(1 To MAX_MAPS) As CacheRec
+
+Private Type CacheRec
+    Data() As Byte
+End Type
+
+    SMapCache
+
+
+Sub SendMapCache(ByVal index As Long, ByVal MapNum As Long)
+    Dim Buffer As clsBuffer
+    Set Buffer = New clsBuffer
+    
+    Buffer.PreAllocate (UBound(MapCache(MapNum).Data) - LBound(MapCache(MapNum).Data)) + 5
+    Buffer.WriteLong SMapCache
+    Buffer.WriteBytes MapCache(MapNum).Data()
+    SendDataTo index, Buffer.ToArray()
+    
+    Set Buffer = Nothing
+End Sub
+
+
+Call CreateMapCache(i)
+
+
+MapCache(index).Data = vbNullString
+
+
+
+
+Sub CreateMapCache(ByVal index As Long)
+Dim MapData As String
+Dim x As Long
+Dim y As Long
+Dim i As Long
+Dim Buffer As clsBuffer
+
+    Set Buffer = New clsBuffer
+    Buffer.WriteLong SMapCache
+    Buffer.WriteString Trim$(Map(index).Name)
+
+    For x = 0 To MAX_MAP_X
+        For y = 0 To MAX_MAP_Y
+            With Map(index).Tile(x, y)
+                For i = 1 To Layers.Layer_Count - 1
+                    Buffer.WriteLong .Layer(i).x
+                    Buffer.WriteLong .Layer(i).y
+                    Buffer.WriteLong .Layer(i).tileset
+                Next
+            End With
+
+        Next
+    Next
+
+    MapCache(index).Data = Buffer.ToArray()
+    
+    Set Buffer = Nothing
+End Sub

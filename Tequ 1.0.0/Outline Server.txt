@@ -1,0 +1,13 @@
+	- Main
+		- Show the server
+		- Initialize the server
+			- Load all the data
+			- Loading up all the sockets
+		- Start the gameloop
+		- Listen for connections
+
+	- Closing Game
+		- Close winsock
+		- Stop the gameloop
+		- Save data
+		- Close the form

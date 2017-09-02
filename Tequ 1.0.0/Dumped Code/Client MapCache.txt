@@ -1,0 +1,35 @@
+    SMapCache
+
+
+
+    HandleDataSub(SMapCache) = GetAddress(AddressOf HandleMapCache)
+
+
+
+Public Sub HandleMapCache(ByVal Index As Long, ByRef Data() As Byte, ByVal StartAddr As Long, ByVal ExtraVar As Long)
+Dim n As Long
+Dim X As Long
+Dim Y As Long
+Dim i As Long
+Dim Buffer As clsBuffer
+Dim mapNum As Long
+    
+    Set Buffer = New clsBuffer
+    Buffer.WriteBytes Data()
+
+    mapNum = Buffer.ReadLong
+    Map(1).Name = Buffer.ReadString
+
+    For X = 0 To MAX_MAP_X
+        For Y = 0 To MAX_MAP_Y
+            For i = 1 To Layers.Layer_Count - 1
+                Map(1).Tile(X, Y).Layer(i).X = Buffer.ReadLong
+                Map(1).Tile(X, Y).Layer(i).Y = Buffer.ReadLong
+                Map(1).Tile(X, Y).Layer(i).tileset = Buffer.ReadLong
+            Next
+        Next
+    Next
+    Set Buffer = Nothing
+
+    Call SaveMapCache(mapNum)
+End Sub

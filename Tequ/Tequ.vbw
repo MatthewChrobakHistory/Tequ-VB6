@@ -1,0 +1,15 @@
+frmMain = 0, 0, 855, 451, , 25, 25, 880, 476, C
+modGeneral = 50, 50, 905, 501, 
+modGlobals = 75, 75, 930, 526, 
+modGameLoop = 100, 100, 955, 551, 
+modBinary = 125, 125, 980, 576, 
+modTypes = 150, 150, 1005, 601, 
+modConstants = 175, 175, 1030, 626, 
+frmMenu = 50, 50, 903, 501, , 25, 25, 878, 476, C
+clsBuffer = 75, 75, 928, 526, 
+modClientTCP = 25, 25, 878, 476, 
+modHandleData = 100, 100, 953, 551, 
+modEnumerations = 150, 150, 1003, 601, 
+frmMapEditor = 50, 50, 914, 501, , 25, 25, 889, 476, C
+frmAdminPanel = 100, 100, 964, 551, , 75, 75, 939, 526, C
+frmMETools = 25, 25, 889, 476, Z, 0, 0, 864, 451, C
